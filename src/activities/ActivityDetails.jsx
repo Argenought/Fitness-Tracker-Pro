@@ -5,7 +5,7 @@ import { deleteActivity, getActivity } from "../api/activities";
 
 export default function ActivityDetails() {
   const { token } = useAuth();
-  const { id } = useParams;
+  const { id } = useParams();
   const navigate = useNavigate();
   const [activity, setActivity] = useState(null);
   const [error, setError] = useState(null);

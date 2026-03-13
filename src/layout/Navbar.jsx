@@ -6,7 +6,7 @@ export default function Navbar() {
   const { token, logout } = useAuth();
   return (
     <header>
-      <p>Fitness Trackr</p>
+      <p>Fitness Tracker</p>
       <nav>
         <NavLink to="/activities">Activities</NavLink>
         {token ? (

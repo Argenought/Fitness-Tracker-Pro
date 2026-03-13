@@ -13,14 +13,16 @@ import ActivityDetails from "./activities/ActivityDetails.jsx";
  * account will be able to upload and manage their own activities.
  */
 export default function App() {
-  <Routes>
-    <Route element={<Layout />}>
-      <Route index element={<ActivitiesPage />} />
-      <Route path="register" element={<Register />} />
-      <Route path="login" element={<Login />} />
-      <Route path="activities" element={<ActivitiesPage />} />
-      <Route path="/activities/:id" element={<ActivityDetails />} />
-      <Route path="*" element={<Error404 />} />
-    </Route>
-  </Routes>;
+  return (
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<ActivitiesPage />} />
+        <Route path="register" element={<Register />} />
+        <Route path="login" element={<Login />} />
+        <Route path="activities" element={<ActivitiesPage />} />
+        <Route path="/activities/:id" element={<ActivityDetails />} />
+        <Route path="*" element={<Error404 />} />
+      </Route>
+    </Routes>
+  );
 }
